@@ -1,8 +1,8 @@
 ---
 title: 基于redis的分布式读写锁实现
-date: 2020-01-11 02:51:39
+date: 2020-2-13 01:01:00
 tags: [redis,分布式锁,读写锁]
-categories: 心得
+categories: [心得,redis]
 ---
 
 ### 分布式锁
