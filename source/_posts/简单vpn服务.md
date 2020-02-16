@@ -3,6 +3,7 @@ title: 简单vpn服务在家连接公司内网设施
 date: 2020-02-02 12:30:27
 tags: [vpn,远程办公,内网穿透,docker]
 categories: [教程,docker]
+thumbnail: https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/u=3756945068,2149091143&fm=26&gp=0.jpg
 ---
 
 最近疫情严重,公司开启了远程办公模式.为了在远程访问内网资源,自然是少不了VPN.
