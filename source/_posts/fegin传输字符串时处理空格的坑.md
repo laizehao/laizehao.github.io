@@ -39,7 +39,7 @@ ResponseEntity<List<PlanDTO>> getPlans(PlanQueryForm queryForm);
   [According to rfc2396, space in url should be encoded as "%20" instead
   of "+".](https://github.com/OpenFeign/feign/pull/230)
 
-   原来如此,`url`中的空格被编码成`+`号其实是feigin里的一个**BUG**,正确的转义应该是`%20`.
+   原来如此,`url`中的空格被编码成`+`号其实是feigin里的一个**BUG**,正确的编码应该是`%20`.
 
   我看了一下我们公司使用的springboot版本是2.10.依赖的feigin版本是`10.1.0`
 
