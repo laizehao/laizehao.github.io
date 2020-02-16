@@ -14,6 +14,7 @@ categories: [教程,linux]
 ```bash
 #在/var/swap下创建swap文件
 #大小是2048000bytes
+#/var/swap 可以替换成自己喜欢的地址
 $ dd if=/dev/zero of=/var/swap bs=1024 count=2048000
 ```
 
