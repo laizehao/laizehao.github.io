@@ -22,6 +22,8 @@ categories: [心得,redis]
   比如 `WLOCK:ARTICLE` .这个节点代表了资源`ARTICLE`的读锁.
   `RLOCK:ARTICLE` 则代表了资源`ARTICLE`的写锁.
 
+<!-- more -->
+
 * 获取锁
 
   如果是读锁: 

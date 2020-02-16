@@ -2,7 +2,7 @@
 title: 在linux下配置swap分区
 date: 2020-01-09 16:59:22
 tags: [swap,配置]
-categories: [教程,备忘,linux]
+categories: [教程,linux]
 ---
 
 #### 如何在linux下配置swap分区
@@ -16,6 +16,8 @@ categories: [教程,备忘,linux]
 #大小是2048000bytes
 $ dd if=/dev/zero of=/var/swap bs=1024 count=2048000
 ```
+
+<!-- more -->
 
 ##### 2.设置swap文件
 
