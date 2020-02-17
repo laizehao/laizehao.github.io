@@ -1,8 +1,8 @@
 ---
 title: fegin传输字符串时处理空格的坑(feigin框架的bug)
 date: 2019-01-13 21:46:21
-tags: [springCloud,feign,微服务]
-categories: [踩坑,springCloud]
+tags: [springcloud,feign,微服务]
+categories: [踩坑,springcloud]
 thumbnail:  https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/20200216175552.png
 ---
 

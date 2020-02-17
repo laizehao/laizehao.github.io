@@ -10,11 +10,15 @@ thumbnail:  https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/2020021
 
 因为公司业务要求,目前的架构是采用了`spring-cloud`微服务架构.
 
-无论是开发,测试,还是生产环境,都需要通过日志来排查出现问题的原因.ssh上去查询日志太麻烦了,特别是一个服务有多个实例的情况下,根本不知道报错位置在哪个实例上.只能一个个上去查找.非常浪费时间.
+无论是开发,测试,还是生产环境,都需要通过日志来排查出现问题的原因.
 
-因此需要搭建基于`elk`的日志系统,另外,采用docker搭建elk更加方便,所以采用docker来搭建elk.
+那么问题就来,一个服务有多个实例的情况下,根本不知道报错位置在哪个实例上.只能一台一台机器的查看日志并排除.非常浪费时间.
+
+因此需要搭建基于`elk`的日志系统,另外,采用docker搭建elk更加方便,所以采用docker来搭建elk.mysql索引类型和优化.md
 
 ## 搭建过程
+
+<!-- more -->
 
 1.  **镜像版本**
 
@@ -89,3 +93,5 @@ thumbnail:  https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/2020021
    }
    ```
 
+## spring如何接入elk
+    

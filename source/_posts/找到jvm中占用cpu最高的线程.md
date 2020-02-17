@@ -10,7 +10,7 @@ thumbnail: https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/u=375694
 
 之前有一个微服务运行一段时间就开始卡住.服务器cpu占用达到400% +.
 
-实在是太慢了,甚至连eureka心跳包都发不出去.注册中心显示这个服务的状态是`down`.
+因为cpu爆满导致连eureka心跳包都发不出去.明明两个实例都还存活,但是注册中心显示这个服务的状态是`down`.
 
 一开始以为是个意外事件.重新部署一下就好.但是发现重启以后没过几个小时又开始卡住.
 
