@@ -1,9 +1,15 @@
 ---
 title: 在linux下配置swap分区
+tags:
+  - swap
+  - 配置
+categories:
+  - 教程
+  - linux
+thumbnail: >-
+  https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/u=2919831077,1230952122&fm=26&gp=0.jpg
+abbrlink: 714fb806
 date: 2020-01-09 16:59:22
-tags: [swap,配置]
-categories: [教程,linux]
-thumbnail: https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/u=2919831077,1230952122&fm=26&gp=0.jpg
 ---
 
 #### 如何在linux下配置swap分区

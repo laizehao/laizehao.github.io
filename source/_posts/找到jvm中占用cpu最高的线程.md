@@ -1,9 +1,17 @@
 ---
 title: 找到jvm中占用cpu最高的线程
+tags:
+  - jvm
+  - linux
+  - 踩坑
+  - bug
+categories:
+  - 踩坑
+  - jvm
+thumbnail: >-
+  https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/u=3756945068,2149091143&fm=26&gp=0.jpg
+abbrlink: 6653a588
 date: 2020-02-17 14:15:13
-tags: [jvm,linux,踩坑,bug]
-categories: [踩坑,jvm]
-thumbnail: https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/u=3756945068,2149091143&fm=26&gp=0.jpg
 ---
 
 #### 前言

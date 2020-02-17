@@ -1,9 +1,16 @@
 ---
 title: 在linux下配置swap分区
+tags:
+  - jvm
+  - 配置
+  - 教程
+categories:
+  - 教程
+  - jvm
+thumbnail: >-
+  https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/20200216162948.png
+abbrlink: 714fb806
 date: 2019-01-13 18:46:21
-tags: [jvm,配置,教程]
-categories: [教程,jvm]
-thumbnail:  https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/20200216162948.png
 ---
  
 

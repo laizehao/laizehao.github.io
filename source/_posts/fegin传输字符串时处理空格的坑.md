@@ -1,9 +1,16 @@
 ---
 title: fegin传输字符串时处理空格的坑(feigin框架的bug)
+tags:
+  - spring-cloud
+  - feign
+  - 微服务
+categories:
+  - 踩坑
+  - spring-cloud
+thumbnail: >-
+  https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/20200216175552.png
+abbrlink: f1f38b39
 date: 2019-01-13 21:46:21
-tags: [springcloud,feign,微服务]
-categories: [踩坑,springcloud]
-thumbnail:  https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/20200216175552.png
 ---
 
 # 前言
@@ -29,25 +36,23 @@ ResponseEntity<List<PlanDTO>> getPlans(PlanQueryForm queryForm);
 而反序列化的时候会把url中的 `+`号解码成半角空格 " " .这样必然会出现时间格式化异常问题..
 
 
-
 # 解决方法
 
 * 修改接口,给参数加上`@RequestBody`可以规避这个问题.但是我认为这不是很好的解决方式.于是
 
-* 我google一下.发现15年的时候已经有人在[github-openFeigin](https://github.com/OpenFeign/feign/) 上提过这个pullRequests了:
+* 通过google.我发现15年的时候已经有人在[github-openFeigin](https://github.com/OpenFeign/feign/) 上提到过这个问题:
 
   [According to rfc2396, space in url should be encoded as "%20" instead
   of "+".](https://github.com/OpenFeign/feign/pull/230)
 
-   原来如此,`url`中的空格被编码成`+`号其实是feigin里的一个**BUG**,正确的编码应该是`%20`.
+  那么真相大白了,原来`url`中的空格被编码成`+`号其实是一个**BUG**,`+`号应该被编码成`%20`才是正解.
 
-  我看了一下我们公司使用的springboot版本是2.10.依赖的feigin版本是`10.1.0`
+  看了我们公司使用的springboot版本是2.10.依赖的feigin版本是`10.1.0`
 
   github中的feigin仓库里修复这个问题版本号是 `8.13` 照理说这个BUG早就应该被修复了才对.
 
   ![](https://gitee.com/minagamiyuki/picgo-gitee/raw/master/images/截屏2020-02-16下午6.01.35.png)
   
   尝试升级springCloud版本可能修复这个bug.但是风险太高.emm.
-  
-  这真是一个非常坑爹的BUG.
+ 
   
