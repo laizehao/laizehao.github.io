@@ -34,9 +34,10 @@ docker run --name redis -p 127.0.0.1:6379:6379 -v /etc/localtime:/etc/localtime 
 ## docker搭建mongodb
 
 ```bash
+#单机,无认证
 docker run -p 127.0.0.1:27017:27017 -v <LocalDirectoryPath>:/data/db --name docker_mongodb -d mongo
-#带身份验证的
-docker run -d --name mongodb  -v /home/xxx/dbdir/mongodb:/data/db -e MONGO_INITDB_ROOT_USERNAME=xxx -e  MONGO_INITDB_ROOT_PASSWORD=xxxxx -p 27017:27017  mongo --auth
+#单机,带身份验证的
+docker run -d --name mongodb  -v /home/xxx/dbdir/mongodb:/data/db -e MONGO_INITDB_ROOT_USERNAME=xxx -e  MONGO_INITDB_ROOT_PASSWORD=xxxxx -p 127.0.0.1:27017:27017  mongo --auth
 #-p 指定容器的端口映射，mongodb 默认端口为 27017
 
 #-v 为设置容器的挂载目录，这里是将<LocalDirectoryPath>即本机中的目录挂载到容器中的/data/db中作为 mongodb 的存储目录

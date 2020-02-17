@@ -106,3 +106,13 @@ deploy:
 #    github : git@github.com:laizehao/laizehao.github.io.git
     coding : git@e.coding.net:laizeh/blog.git
   branch: master
+
+# plugins:
+Plugins:
+  - hexo-generator-baidu-sitemap
+  - hexo-generator-sitemap
+
+baidusitemap:
+  path: baidusitemap.xml
+sitemap:
+  path: sitemap.xml
