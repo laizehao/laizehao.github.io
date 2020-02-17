@@ -88,10 +88,14 @@ $ systemctl restart docker
 
   后来我发现这个问题是有原因的.
   具体表现是从某次更新以后服务的线程数就不断增加,从最初的几百,一千多,慢慢增长到一万,两万..初步判断是将系统最大线程占满导致的..
-  导致系统最大线程占满的原因很多,这次是因为中了病毒导致的.当然实际情况多变,配置异常,中毒,都有可能.
+  导致系统最大线程占满的原因很多,这次是因为中了门罗币的挖矿病毒.
+  当然实际情况多变,配置异常,中毒,代码中有创建大量线程的逻辑,都有可能.
 
 * 报错:Error response from daemon: error creating overlay mount to ... invalid argument.
-
+  
+  出现这个错误是因为当前的内核不支持overlay2文件系统.
+  解决方案:
+  
   ```bash
   #step1：先停用docker服务
   $ service docker stop

@@ -103,6 +103,6 @@ theme: icarus
 deploy:
   type: git
   repo:
-    github : git@github.com:laizehao/laizehao.github.io.git
+#    github : git@github.com:laizehao/laizehao.github.io.git
     coding : git@e.coding.net:laizeh/blog.git
   branch: master
