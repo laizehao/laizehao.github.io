@@ -63,6 +63,11 @@ index_generator:
   path: ''
   per_page: 8
   order_by: -date
+archive_generator:
+  path: '/archives'
+  per_page: 30
+  order_by: -date
+
 
 # Category & Tag
 default_category: uncategorized
